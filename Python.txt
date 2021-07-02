@@ -1,0 +1,47 @@
+print-
+print()
+
+input-
+input()
+input("Message")
+user-input = input()
+
+concat-
+pass the value as a string
+print("This is value " +str(var)+ "and it is passed as string")
+or
+var1=20
+print(f"This is value {var1} and it is passed in without string")   ## f stands for format
+
+function-
+#define
+def function_name():
+    #code
+    print("function without parameters")
+
+def function_with_parameter(val_parameter, val2_parameter):
+    #code with usage
+    print(f"Value of 1st parameter is: {val_parameter} and the value of 2nd parameter is: {val2_parameter}")
+
+#calling
+val=70
+val2="message"
+function_name()
+function_with_parameter(val, val2)
+
+#With return
+calculation_to_units = 24
+name_of_unit = "hours"
+def days_to_units(num_of_days):
+	return f"{num_of_days} days are {num_of_days * calculation_to_units} {name_of_unit}"
+
+days=int(input("enter num of days:\n"))
+my_var = days_to_units(days)
+print(my_var)
+
+if_else
+
+if var>var2:
+    print("yes")
+else:
+    print("No")

@@ -1,4 +1,15 @@
+git config --global user.email "hello@example.com"
+
 git clone https://github.com/tjtanmay/pythonRelated.git
+
+$ ssh-keygen -t ed25519-sk -C "your_email@example.com"
+
+git remote add origin https://github.com/tjtanmay/pythonRelated.git
+
+git branch -M main
+
+git push -u origin main
+
 
 36477@LTMX-CV27H12 MINGW64 ~/Desktop/python (master)
 $ git push -u origin master
