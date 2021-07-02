@@ -1,0 +1,37 @@
+git clone https://github.com/tjtanmay/pythonRelated.git
+
+36477@LTMX-CV27H12 MINGW64 ~/Desktop/python (master)
+$ git push -u origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+36477@LTMX-CV27H12 MINGW64 ~/Desktop/python (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 417
+
+36477@LTMX-CV27H12 MINGW64 ~/Desktop/python (master)
+$ ssh-add tanmay_id_rsa
+Identity added: tanmay_id_rsa (tjtanmay25@gmail.com)
+
+###Added public key in git account setting "Add ssh key"
+
+36477@LTMX-CV27H12 MINGW64 ~/Desktop/python (master)
+$ git push -u origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 3.17 KiB | 464.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/tjtanmay/pythonRelated/pull/new/master
+remote:
+To github.com:tjtanmay/pythonRelated.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+36477@LTMX-CV27H12 MINGW64 ~/Desktop/python (master)
